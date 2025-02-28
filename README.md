@@ -5,7 +5,7 @@ This project is a Streamlit application that leverages Apache Spark for data pro
 ## Project Structure
 
 ```
-streamlit-spark-app
+NYCBS
 ├── app
 │   ├── pages
 │   │   └── home.py          # Main page of the Streamlit app
@@ -18,6 +18,22 @@ streamlit-spark-app
 │   └── sample_dataset.csv    # Sample dataset for demonstration
 ├── requirements.txt          # Required libraries
 └── README.md                 # Project documentation
+```
+
+```
+NYCBS                           #DBT Project
+|-- macros
+|
+|-- models                       # dbt models
+|   |-- mart                     # star schema models
+|   |-- staging                  # staging & intermediate models 
+|   |-- sources.yml              # source tables from the landing source
+|
+|-- seeds                        # csv files for loading
+|
+|-- snapshots                    # SCD models
+|
+|--dbt_project.yml               #configuration file for the dbt project
 ```
 
 ## Setup Instructions
