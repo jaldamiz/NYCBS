@@ -402,9 +402,13 @@ FodyWeavers.xsd
 # user defined files
 raw_data/
 
-# Default .gitignore content added by dbt Cloud# you shouldn't commit these into source control
-# these are the default directory names, adjust/add to fit your needs
-target/
+data/
+dwh/
+.venv/
+catalog/
+tables/
+spark-warehouse/
 dbt_packages/
 logs/
-# end dbt Cloud content
+target/
+
