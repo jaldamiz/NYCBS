@@ -401,9 +401,14 @@ FodyWeavers.xsd
 
 # user defined files
 raw_data/
+
 data/
 dwh/
 .venv/
 catalog/
 tables/
 spark-warehouse/
+dbt_packages/
+logs/
+target/
+
