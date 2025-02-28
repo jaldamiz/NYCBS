@@ -56,22 +56,43 @@ NYCBS                           #DBT Project
    '''
 
 4. **Download NYCBS Januray 2025 file**
+   '''bash
    mkdir -p raw_data
-   curl -L -o raw_data/202501-citibike-tripdata.zip https://s3.amazonaws.com/tripdata/202501-citibike-tripdata.zip
+   curl -L -o raw_data/202501-citibike-tripdata.zip https://s3.amazonaws.com/tripdata/202501-citibike-tripdata.zip   # On Windows use 'curl.exe -L -o raw_data/202501-citibike-tripdata.zip https://s3.amazonaws.com/tripdata/202501-citibike-tripdata.zip'
+   '''
 
 5. **Install Java JDK**
-   https://www.oracle.com/java/technologies/downloads/
+   https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
 
-6. **Install maven**
+6. **Install spark**
+   https://spark.apache.org/downloads.html
+   # for windows winutils https://github.com/steveloughran/winutils
+   Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 3.5.5
+      /_/
+
+Using Scala version 2.12.18, Java HotSpot(TM) 64-Bit Server VM, 11.0.25
+Branch HEAD
+Compiled by user ubuntu on 2025-02-23T20:30:46Z
+Revision 7c29c664cdc9321205a98a14858aaf8daaa19db2
+Url https://github.com/apache/spark
+Type --help for more information.
+
+7. **Install maven (optional)**
    https://maven.apache.org/download.cgi
 
-7. **Run spark-iceberg-helper maven project**
+8. **Run spark-iceberg-helper maven project(optional)**
+   '''bash
    cd spark-iceberg-helper
-   mvn clean package -U 
+   mvn clean package -U
+   '''
 
-8. **Run nycvs.ipnbc**
+9. **Run nycvs.ipnbc**
 
-8. **Run the Streamlit app:**
+10. **Run the Streamlit app:**
    '''bash
    streamlit run app/pages/home.py
    '''
