@@ -404,6 +404,6 @@ raw_data/
 data/
 dwh/
 .venv/
-spark-iceberg-helper/
 catalog/
 tables/
+spark-warehouse/
