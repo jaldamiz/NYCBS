@@ -401,3 +401,9 @@ FodyWeavers.xsd
 
 # user defined files
 raw_data/
+data/
+dwh/
+.venv/
+spark-iceberg-helper/
+catalog/
+tables/
